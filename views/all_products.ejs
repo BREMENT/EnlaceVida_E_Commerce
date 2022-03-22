@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title> PRODUCTOS </title>
+ 
+    <!-- Include Head -->
+    <%- include('partials/head') %>
+    <!-- Include /Head -->
+
+    	<!-- Header -->
+	<%- include('partials/header') %>
+	<!-- /Header -->
+
+<body>
+
+    <h1><i class="fas fa-arrow-circle-left"></i><a href="/home">Home 😎</a></h1>
+
+
+<!-- todos los productos -->
+<link rel='stylesheet' href='/stylesheets/products.css' />
+    <div class="container products-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="products-title">Todos los productos</h2>
+            </div>
+            <!-- Show the "visited" products -->
+            <div class="main-box-product">
+                    <% products.forEach(product => { %>
+                        <section class="product-box">
+                            <a href="/products/detail/<%= product.id %>">
+                                <figure class="product-box_image">
+                                    <img src="/images/products/<%= product.image %>" alt="<%= product.description %>">
+                                </figure>
+                                <article class="product-box_data">
+                                    <h2><%= product.price %></h2>
+                                    <span><%= product.discount %></span>
+                                    <p><%= product.name %></p>
+                                    <i class="fas fa-truck"></i>
+                                </article>
+                            </a>
+                        </section>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+
+<!-- /todos los productos -->
+    
+ </body>
+<hr> 
+<%- include('./partials/footer') %>
+<hr>
+</html>

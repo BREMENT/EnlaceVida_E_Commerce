@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title> ¡Hola Ingresa! </title>
+<link rel='stylesheet' href='/stylesheets/forms.css' />
+<link rel='stylesheet' href='/stylesheets/register_forms.css' />
+    <!-- Include Head -->
+<%- include('partials/head') %>   
+
+<body>
+<!-- Header -->
+<%- include('partials/header') %>
+<h1><i class="fas fa-arrow-circle-left"></i><a href="/">Home</a></h1>
+<!-- /Header -->   
+
+<div class="container form-wrapper"> 
+    <nav class="register-navbar">
+    <div class="row form-detail"> 
+        <form action="/register" method="GET" class="create-form">  <!--POST informacion sensible o segura, GET es para formulario de busqueda-->
+            <div class="control-login">
+                <div class="control-form">
+                    <h2 class="form-title">¡Hola! Ingresa tu usuario </h2>
+                    <label for="name" class="form-label">Nombre de usuario:</label>
+                    <input type="text" id="name" name="name" placeholder="Ej: Nombre de usuario" class="form-input">
+                </div>
+                <div class="control-form">
+                        <div class="control-form">
+                            <label for="name" class="form-label">Password:</label>
+                            <input type="text" id="password" name="password" placeholder="Ej: 4$gaBTA@" class="form-input">
+                        </div>
+                    <div class="control-form">
+                        <button type="submit" class="buy-now-button">Enter</button>
+                    </div>
+                </div>
+                <label for="forgot-password" class="form-label"> Forgot your password?</label>
+                <div class="control-form">
+                    <button type="submit" class="delete-button">Click</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    </nav>
+</div>
+   
+</body>
+<%- include('./partials/footer') %>
+<hr>
+</html>
+</body>
+

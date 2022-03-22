@@ -1,0 +1,102 @@
+[
+ {
+  "name": "Pedro Picapiedra",
+  "phone": "2224585971",
+  "birth_dat": "1981-04-10",
+  "email": "pedropicapiedra@gmail.com",
+  "userCategory": "cliente",
+  "password": "pedro",
+  "id": 1644346319893,
+  "image": "PedroPicapiedra.png"
+ },
+ {
+  "name": "Mimi Mouse",
+  "phone": "2224585972",
+  "birth_dat": "1992-04-10",
+  "email": "mimimouse@gmail.com",
+  "userCategory": "cliente",
+  "password": "mimi",
+  "id": 1644346403733,
+  "image": "mimi.png"
+ },
+ {
+  "name": "El gato con botas`",
+  "phone": "2224595873",
+  "birth_dat": "1987-07-10",
+  "email": "elgatoconbotas@gmail.com",
+  "userCategory": "cliente",
+  "password": "elgato",
+  "id": 1644349273889,
+  "image": "elgatoconBotas.png"
+ },
+ {
+  "name": "Mickey Mouse",
+  "phone": "2224585974",
+  "birth_dat": "1989-02-18",
+  "email": "micke_mouse@gmail.com",
+  "userCategory": "cliente",
+  "password": "mickey",
+  "id": 1644361439653,
+  "image": "Mickey.png"
+ },
+ {
+  "name": "Tribilin Mouse",
+  "phone": "2224585975",
+  "birth_dat": "1987-04-10",
+  "email": "tribilin@gmail.com",
+  "userCategory": "cliente",
+  "password": "tribilin",
+  "id": 1644373968783,
+  "image": "Goofey.png"
+ },
+ {
+  "name": "Pluto Mouse",
+  "phone": "2224585975",
+  "birth_dat": "1987-04-10",
+  "email": "pluto@gmail.com",
+  "userCategory": "cliente",
+  "password": "pluto",
+  "id": 1644373968784,
+  "image": "pluto.png"
+ },
+ {
+  "name": "Pablo Marmol",
+  "phone": "2224585977",
+  "birth_dat": "1969-12-08",
+  "email": "pablomarmol@gmail.com",
+  "userCategory": "cliente",
+  "password": "pablomarmol",
+  "id": 1644436827339,
+  "image": "img-1644436827316PabloMarmol.png"
+ },
+ {
+  "name": "Vilma Picapiedra",
+  "phone": "2224585978",
+  "birth_dat": "1969-05-10",
+  "email": "vilmapicapiedra@gmail.com",
+  "userCategory": "cliente",
+  "password": "vilma",
+  "id": 1644436977493,
+  "image": "img-1644436977482VilmaPicapiedra.png"
+ },
+ {
+  "name": "Donald Disney",
+  "phone": "2224585980",
+  "birth_dat": "1990-01-10",
+  "email": "donal@gmail.com",
+  "userCategory": "cliente",
+  "password": "donald",
+  "id": 1644443212393,
+  "image": "Donald.png"
+ },
+ {
+  "name": "Robotina Sonico",
+  "phone": "2224585981",
+  "birth_dat": "1998-02-10",
+  "email": "robotina_sonico@gmail.com",
+  "userCategory": "cliente",
+  "password": "robotina",
+  "id": 1644446800587,
+  "image": "img-1644446800579robotina.png"
+ }
+]

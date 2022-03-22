@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title> REGISTRO </title>
+    <link rel='stylesheet' href='/stylesheets/register_forms.css' />
+
+
+    <!-- Include Head -->
+<%- include('partials/head') %>   
+<body>
+
+<!-- Header -->
+<%- include('partials/header') %>
+<!-- /Header -->  
+<h1><i class="fas fa-arrow-circle-left"></i><a href="/home">Home</a></h1>
+<div class="container form-wrapper">
+
+<nav class="register-navbar">
+
+        <div class="row form-detail">
+    
+        <!--P   <% if (locals.errors) {  %>
+             <% for (let oneError in errors) { %>   
+                 <p class="feedback_danger"> <%= errors[oneError].msg %> </p> 
+                  <% } %>  
+          <% } %>    -->   
+     
+            <form action="/users/detail/id" method="POST" class="create-form" enctype="multipart/form-data" >  <!--POST informacion sensible o segura, GET es para formulario de busqueda,  enctyp es para procesar archivos como fotos-->
+                <div class="control-login">
+                    <div class="control-form">
+                        <h2 class="form-title">¡Hola! Ingresa tus datos </h2>  
+                        <label for="name" class="form-label">Nombre de usuario:</label>
+                        <input 
+                            type="text"
+                            id="name" 
+                            name="name"
+                            placeholder="Ej: Nombre de usuario"
+                            class="form-input <%= locals.errors && errors.name ? 'is-invalid' : null %>"  
+                            value= "<%= locals.oldData? oldData.name: null %> "             
+                            >    
+                                <% if (locals.errors && errors.name) { %> 
+                                <p class="feedback_danger">
+                                <%= errors.name.msg %>   
+                                </p> 
+                            <% } %>    
+                    </div> 
+                        
+                    <div class="control-form">
+                        <label for="phone" class="form-label">Telefono:</label>
+                        <input
+                             type="number" 
+                             id="phone" 
+                             name="phone"
+                             placeholder="Ej: 2224585970" 
+                             class="form-input <%= locals.errors && errors.phone ? 'is-invalid' : null %>"
+                             value= "<%= locals.oldData? oldData.phone: null %> " > 
+                        <% if (locals.errors && errors.phone) { %> 
+                            <p class="feedback_danger">
+                            <%= errors.phone.msg %>   
+                            </p> 
+                        <% } %> 
+                    </div>
+
+                    <div class="control-form">
+                        <label for="nacimiento" class="form-label">Fecha de nacimiento:</label>
+                        <input 
+                            type="date"
+                             id="birth_dat" 
+                             name="birth_dat" 
+                             class="form-input <%= locals.errors && errors.birth_dat ? 'is-invalid' : null %>"
+                             value= "<%= locals.oldData? oldData.birth_dat: null %> " 
+                             >
+                        <% if (locals.errors && errors.birth_dat) { %> 
+                            <p class="feedback_danger">
+                            <%= errors.birth_dat.msg %>   
+                            </p> 
+                        <% } %> 
+                    </div>
+                    <div class="control-form">
+                        <label for="email" class="form-label">Ingresa tu e-mail:</label>
+                        <input 
+                            type="text" 
+                            id="email"
+                            name="email"
+                            placeholder="Ej: pepePica_Papas40@gmail.com" 
+                            class="form-input <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                            value= "<%= locals.oldData? oldData.email: null %> " 
+                            >
+                        <% if (locals.errors && errors.email) { %> 
+                            <p class="feedback_danger">
+                            <%= errors.email.msg %>   
+                            </p> 
+                        <% } %> 
+                    </div>
+                    <div class="control-form">
+						<label for="usercategory" class="form-label">Categoría de venta:</label>
+						<select 
+                           name="userCategory" 
+                           class="form-input  <%= locals.errors && errors.userCategory ? 'is-invalid' : null %>"
+                            >
+							<option value=""> Elige una opción</option>
+                            <% 
+                               let categories = ['Cliente','Vendedor'] 
+                            %> 
+                            <% for (const userCategory of categories) { %>
+							    <option 
+                                    value="<%= userCategory %>"
+                                    <%= locals.oldData && (userCategory === oldData.userCategory) ? 'selected' : null %> 
+                                > <%= userCategory %> </option>
+                                <% } %>
+						</select>
+                             <% if (locals.errors && errors.userCategory) { %> 
+                                <p class="feedback_danger">
+                                <%= errors.userCategory.msg %>   
+                                </p> 
+                            <% } %>   
+					</div>
+                    <!--Estos datos se van a migrar a usuario edicion  
+                        -------------------------------
+                    <div class="control-form">
+                        <label for="adresse" class="form-label">Dirección:</label>
+                        <input type="text" id="adress" name="adress" placeholder="Ej: Calle 7 manzana 11 no. 7, Fraccionamiento El Rosario, C.P.68150" class="form-input">
+                    </div>  -->
+ 
+                    <div class="control-form">
+                        <label for="userImage"class="form-label">Foto de usuario:</label>
+                        <input type="file" name="userImage" id="user-image" class="productImage" accept=".jpg, .png"> 
+                    </div>
+                 
+                    <div class="control-form">
+                            <div class="control-form">
+                                <label for="name" class="form-label">Password:</label>
+                                <input
+                                     type="text" 
+                                     id="password"
+                                     name="password" 
+                                     placeholder="Ej: 4$gaBTA@" 
+                                     class="form-input <%= locals.errors && errors.password ? 'is-invalid' : null %>">
+                                <% if (locals.errors && errors.password) { %> 
+                                    <p class="feedback_danger">
+                                    <%= errors.password.msg %>   
+                                    </p> 
+                                <% } %> 
+                     </div>
+                    <div class="button-box">
+                                <button type="submit" class="buy-now-button">Crear usuario</button>
+                                <button type="delete" class="delete-button">Borrar registro</button>
+                    </div>
+                    </div>
+
+            </form>
+        </div>
+    </div>  
+</div>
+</div>
+</body>
+    
+
+<!-- footer -->
+<%- include('./partials/footer') %>
+<!-- /footer --> 
+</html>
+
+
+

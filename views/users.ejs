@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title> USUARIOS </title>
+ 
+    <!-- Include Head -->
+    <%- include('partials/head') %>
+    <!-- Include /Head -->
+
+    	<!-- Header -->
+	<%- include('partials/header') %>
+	<!-- /Header -->
+
+<body>
+
+    <h1><i class="fas fa-arrow-circle-left"></i><a href="/home">Home 😎</a></h1>
+
+
+<!-- todos los usuarios -->
+<link rel='stylesheet' href='/stylesheets/products.css' />
+    <div class="container products-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="products-title">Todos los usuarios</h2>
+            </div>
+            <!-- Show the "usuarios" -->
+            <div class="main-box-product">
+                    <% users.forEach(user => { %>
+                        <section class="product-box">
+                            <a href="/users/detail/<%= user.id %>">
+                                <figure class="product-box_image">
+                                    <img src="/images/users/<%= user.image %>" alt="<%= user.name %>">
+                                </figure>
+                                <article class="product-box_data">
+                                    <h2><%= user.name %></h2>
+                                    <span><%= user.email %></span>
+                                    <p><%= user.phone %></p>
+                                    <i class="fas fa-truck"></i>
+                                </article>
+                            </a>
+                        </section>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+
+<!-- /todos los usuarios -->
+    
+ </body>
+<hr> 
+<%- include('./partials/footer') %>
+<hr>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+		<title> {title: 'Formulario de creación'}) %> </title>
+		<h1><i class="fas fa-arrow-circle-left"></i><a href="/">Home</a></h1>
+	
+		<!-- Include Head -->
+	<%- include('partials/head') %>   
+	
+	<body>
+	<!-- Header -->
+	<%- include('partials/header') %>
+	<!-- /Header -->  
+	<link rel='stylesheet' href='/stylesheets/register_forms.css' />
+
+	<div class="container form-wrapper">
+	<nav class="register-navbar">
+
+		<div class="row form-detail">
+			<form action="/products/create" method="POST" enctype="multipart/form-data">
+				
+				<div class="control-login">
+					<div class="control-form">
+						<h2 class="form-title">Formulario de creación de productos</h2>
+						<label for="name" class="form-label">Nombre del producto:</label>
+						<input type="text" id="name" name="name" placeholder="Ej: Insulina marca novolog" class="form-input">
+					</div>
+					<div class="control-form">
+						<label for="price" class="form-label">Precio del producto:</label>
+						<input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
+					</div>
+					<div class="control-form">
+						<label for="discount" class="form-label">Descuento:</label>
+						<input type="text" id="discount" name="discount" placeholder="Ej: 15" class="form-input">
+					</div>
+					<div class="control-form"> 
+						<label for="category-product" class="form-label">Categoría de producto:</label>
+						<select name="categoryProduct" id="categoryProduct" class="form-input">
+							<option value="" >Elige</option>
+							<option value="bienestar">Bienestar</option>
+							<option value="derma">Derma</option>
+							<option value="diabetes">Diabetes</option>
+							<option value="miBebe">Mi Bebe</option>
+							<option value="sexualidad">Sexualidad</option>
+						</select>
+					</div>
+					<div class="control-form">
+						<label for="category" class="form-label">Categoría de venta:</label>
+						<select name="category" id="category" class="form-input">
+							<option value="">Elige</option>
+							<option value="in-sale">En oferta</option>
+							<option value="visited">Últimos agregados</option>
+						</select>
+					</div>
+					<div class="control-form">
+						<label for="description" class="form-label">Descripción:</label>
+						<textarea name="description" id="description" class="form-input"></textarea>
+					</div>
+					<div class="control-form">
+                        <label for="productImage"class="form-label"> Imagen del producto:</label>
+                        <input type="file" name="productImage" id="product-image" class="productImage" accept=".jpg, .png"> 
+                    </div>
+
+					<div class="control-form">
+						<button type="submit" class="buy-now-button">Guardar producto</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>
+</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>

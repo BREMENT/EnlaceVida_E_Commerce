@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title> DETALLE </title>
+    <link rel='stylesheet' href='/stylesheets/products.css' />
+
+    <!-- Include Head -->
+<%- include('partials/head') %>   
+<body>
+
+<!-- Header -->
+<%- include('partials/header') %>
+<!-- /Header -->  
+
+<!-- product detail -->
+<h1><i class="fas fa-arrow-circle-left"></i><a href="/home">Regresa</a></h1>
+
+<div class="container products-detail">
+        <div class="product-detail">
+            <div class="product-head">
+             <h2 class="product-detail-title"><%= product.name %></h2>
+            <img src="/images/products/<%= product.image %>" alt="product image" class="<%= product.description %>">
+        </div>
+            <div class="product-data">
+                    <article class="product-detail-info">                            
+                            <p class="product-detail-price small">
+                            <span>$<%= toThousand(product.price)%></span>
+                            /
+                            <b><%= product.discount %>% OFF</b>
+                            </p>
+
+                            <% if (product.discount >0) { %>
+                            <p class="product-detail-price">
+                                $<%= toThousand(calcFinalPrice(product) )%> 
+                            </p>
+                            <% } else { %>
+                            <p class="product-detail-price">
+                                $<%=  toThousand(product.price) %>							
+                            </p>
+                            <% } %>
+                            <p class="product-detail-price small">
+                                IVA incluido
+                            </p>
+                            <p class="product-detail-price small">
+                                Stock disponible
+                            </p>
+                           
+                            <p class="product-detail-description">
+                                <%= product.description %>
+                            </p>
+                        <ul class="actions-list">
+                            <li>
+                                <i class="fas fa-credit-card"></i>
+                                <p>Pagá en 12 cuotas sin interes</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-store"></i>
+                                <p>Retiro gratis en sucursal</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-truck"></i>
+                                <p>Envíos a toda la republica </p>
+                            </li>
+
+                        </ul>
+                        <div class="button-box">
+                            <a href="#" class="buy-now-button">Comprar Ahora</a>
+                            <a href="#" class="car-button">Agregar al carrito</a>
+                        </div> 
+                        <ul class="actions-list">
+                            <li>
+                                <div class="action-list-2"><i class="fas fa-user-shield"></i></div>
+                                <p>Tu compra siempre esta protegida</p>
+                            </li>
+                            
+                            <li>
+                                <div class="action-list-2"><i class="far fa-calendar-check"></i>  </div>
+                                <p>Recibe lo que esperabas o te devolvemos tu dinero</p>
+                            </li>
+                            <li>
+                                <div class="action-list-2"><i class="fas fa-trophy"></i></div>
+                                <p>Gana puntos y recibe envíos gratis</p>
+                            </li>
+                        </ul>                           
+                    </article>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- /product detail -->
+
+<!-- footer -->
+<%- include('./partials/footer') %>
+<!-- /footer --> 
+</html>
+</body>
+
+

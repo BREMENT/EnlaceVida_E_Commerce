@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Cabellina Chile con Romero Shampoo",
+    "price": 100,
+    "discount": 50,
+    "category": "visited",
+    "categoryProduct": "bienestar",
+    "description": "Cabellina Chile con Romero Shampoo, Cleans and Refresh, 32 FL OZ, Bottle",
+    "image": "Shampoo_Chile.png"
+  },
+  {
+    "id": 2,
+    "name": "Grisi Organogal Shampoo",
+    "price": 500,
+    "discount": 3,
+    "category": "visited",
+    "categoryProduct": "bienestar",
+    "description": "Grisi Organogal Shampoo| Darkening Shampoo with Cactus Extract, Darkening Hair Product for Gray Hair; 13.5 Fl Ounces",
+    "image": "Shampoo_Organogal_Grisi.png"
+  },
+  {
+    "id": 3,
+    "name": "Manzanilla Grisi Shampoo",
+    "price": 50,
+    "discount": 25,
+    "category": "visited",
+    "categoryProduct": "bienestar",
+    "description": "Manzanilla Grisi Cleansing Shampoo with Chamomile Extract, 2 Pack, 13.5 FL Oz, Bottles.",
+    "image": "Shampoo_Manzanilla_Grisi.png"
+  },
+  {
+    "id": 4,
+    "name": "Loción Corporal Piel Normal para Bébé 300 ml",
+    "price": 141.65,
+    "discount": 5,
+    "category": "visited",
+    "categoryProduct": "miBebe",
+    "description": "Crema líquida Mustela Hydra Bébé Loción Corporal Piel Normal 300 ml.",
+    "image": "Locion_corporal_bebe.png"
+  },
+  {
+    "id": 5,
+    "name": "Rechiol - Hendel - Crema Facial Rejuvenecedora",
+    "description": "Rechiol - Hendel - Crema Facial Hidratante Y Rejuvenecedora",
+    "price": 750,
+    "discount": 15,
+    "categoryProduct": "derma",
+    "image": "crema_hidratante_rechiol.png",
+    "category": "visited"
+  },
+  {
+    "id": 6,
+    "name": "Skin Matters Bálsamo Antiestrías P/ Embarazo Crema Intensiva",
+    "description": " Bálsamo corporal altamente hidratante formulado para proteger la piel de las futuras mamás.",
+    "price": 347,
+    "discount": 5,
+    "categoryProduct": "derma",
+    "image": "balsamo_mama_cream.png",
+    "category": "visited"
+  },
+  {
+    "id": 7,
+    "name": "Novolog insulina",
+    "description": "novolog-insulina",
+    "price": 1500,
+    "discount": 5,
+    "categoryProduct": "diabetes",
+    "image": "novolog-insulin.jpg",
+    "category": "visited"
+  },
+  {
+    "id": 8,
+    "name": "Jeringa Para Insulina 0.5ml Bd Ultra-fine Caja C/100 Piezas",
+    "description": "Jeringa Para Insulina 0.5ml Bd Ultra-fine Caja C/100 Piezas.",
+    "price": 599,
+    "discount": 5,
+    "categoryProduct": "diabetes",
+    "image": "Jeringa_Insulina.png",
+    "category": "visited"
+  },
+  {
+    "id": 9,
+    "name": "Toallas Humedas Kleenbebé Absorsec Limpiesito 120 toallitas",
+    "description": "Toallas Humedas Kleenbebé Absorsec Limpiesito 120 toallitas.",
+    "price": 40,
+    "discount": 0,
+    "image": "Toallas_Humedas_Kleenbebe.png",
+    "categoryProduct": "miBebe",
+    "category": "visited"
+  },
+  {
+    "name": "Te compuesto Herbal Diabetes",
+    "price": "449",
+    "discount": "5",
+    "category": "visited",
+    "categoryProduct": "diabetes",
+    "description": "Te compuesto herbal diabetes, regulador de glucosa e insulina ",
+    "id": 1643049935937,
+    "image": "Te_Herbal_Diabetes.png"
+  },
+  {
+    "name": "Protector Solar BiodermaFPS50",
+    "price": "483.65",
+    "discount": "10",
+    "category": "visited",
+    "categoryProduct": "derma",
+    "description": "Protector solar Bioderma Photoderm Mineral en spray FPS50 x 100 g",
+    "id": 1643049935931,
+    "image": "ProtectorSolarBiodermaFPS50.png"
+  },
+  {
+    "name": "Navi - Chek Glucómetro Kit",
+    "price": "699",
+    "discount": "5",
+    "category": "visited",
+    "categoryProduct": "diabetes",
+    "description": "Navi - Chek Glucómetro Active Kit Con 10 Tiras Y 10 Lancetas",
+    "id": 1643049935932,
+    "image": "navi_strips.jpg"
+  },
+  {
+    "name": "Chupón Fruta Alimentador Para Bebé Mordedera",
+    "price": "65",
+    "discount": "5",
+    "category": "in-sale",
+    "categoryProduct": "miBebe",
+    "description": "Chupón Fruta Alimentador Para Bebé Mordedera",
+    "id": 1643049935933,
+    "image": "chupon_alimentador_mordedera.png"
+  },
+  {
+    "name": "Crema De Tomillo 96g Swissjust",
+    "price": "725.00",
+    "discount": "5",
+    "categoryProduct": "bienestar",
+    "category": "visited",
+    "description": "Crema De Tomillo 96g Swissjust Producto Sellado Y Original, Tipo de piel normal ",
+    "id": 1644276440765,
+    "image": "img-Crema De Tomillo.png"
+  },
+  {
+    "name": "Enjuague Bucal De Neem Sin Flúor",
+    "price": "249",
+    "discount": "5",
+    "categoryProduct": "bienestar",
+    "category": "in-sale",
+    "description": "Paq 3- Enjuague Bucal De Neem Sin Flúor-bienestar Neem Erfre",
+    "id": 1644334115894,
+    "image": "img-EnjuageBucal.png"
+  },
+  {
+    "name": "Jabón Intimo Corporal Hoja De Neem",
+    "price": "75",
+    "discount": "5",
+    "categoryProduct": "bienestar",
+    "category": "visited",
+    "description": "Jabón Intimo Corporal Hoja De Neem- Bienestar Neem Erfre",
+    "id": 1644336017996,
+    "image": "img-Jabon_Intimo_Neem.png"
+  },
+  {
+    "name": "Jabón Íntimo Saba V-fresh Líquido 200 Ml",
+    "price": "53.54",
+    "discount": "5",
+    "categoryProduct": "bienestar",
+    "category": "in-sale",
+    "description": "Jabón Íntimo Saba V-fresh Líquido 200 Ml",
+    "id": 1644336284363,
+    "image": "img-Jabon_Saba.png"
+  },
+  {
+    "name": "Toallitas Húmedas Saba Diarios V-fresh 12 Piezas",
+    "price": "14.10",
+    "discount": "5",
+    "categoryProduct": "bienestar",
+    "category": "in-sale",
+    "description": "Toallitas Húmedas Saba Diarios V-fresh 12 Piezas",
+    "id": 1644337192517,
+    "image": "img-Toallitas_Humedas_Sabas.png"
+  },
+  {
+    "name": "Pañales Huggies Supreme Etapa 3 niños M 36 u",
+    "price": "265",
+    "discount": "10",
+    "categoryProduct": "miBebe",
+    "category": "visited",
+    "description": "Pañales Huggies Supreme Etapa 3 niños M 36 u\r\nTalle M.\r\nUso recomendado para bebés con un rango de peso entre 7 kg y 10 kg.\r\nCon gel superabsorbente.\r\nCintura elastizada para mayor comodidad.",
+    "id": 1644337390547,
+    "image": "img-Panales_Huggies_Talle M.png"
+  },
+  {
+    "name": "Pañales Huggies UltraConfort Etapa 2 unisex P 40 u",
+    "price": "213",
+    "discount": "10",
+    "categoryProduct": "miBebe",
+    "category": "visited",
+    "description": "Pañales Huggies UltraConfort Etapa 2 unisex P 40 u",
+    "id": 1644337625848,
+    "image": "img-Panales_Huggies_UltraConfort.png"
+  },
+  {
+    "name": "Pañales Huggies Supreme Etapa RN unisex RN 38 u",
+    "price": "196",
+    "discount": "5",
+    "categoryProduct": "miBebe",
+    "category": "visited",
+    "description": "Talle RN.\r\nUso recomendado para bebés con un peso de hasta 3.5 kg.\r\nCon gel superabsorbente.\r\nCintura elastizada para mayor comodidad.",
+    "id": 1644337795261,
+    "image": "img-Panales_Huggies.png"
+  },
+  {
+    "name": "Pañales Bbtips Sensitive Etapa 3 unisex M 40 u",
+    "price": "170.04",
+    "discount": "10",
+    "categoryProduct": "miBebe",
+    "category": "in-sale",
+    "description": "Talle M.\r\nUso recomendado para bebés con un rango de peso entre 7 kg y 10 kg.\r\nCintura elastizada para mayor comodidad.",
+    "id": 1644338234077,
+    "image": "img-Pañales_Bbtips.png"
+  },
+  {
+    "name": "Glucerna Alimento Líquido Para Diabéticos ( Fresa )",
+    "price": "69",
+    "discount": "5",
+    "categoryProduct": "diabetes",
+    "category": "in-sale",
+    "description": "Glucerna Alimento Líquido Para Diabéticos ( Fresa )",
+    "id": 1644338418441,
+    "image": "img-Glucerna_Alimento_Diabeticos.png"
+  },
+  {
+    "name": "Glucerna Especializada Para Diabéticos Sabor Vainilla",
+    "price": "426",
+    "discount": "10",
+    "categoryProduct": "diabetes",
+    "category": "in-sale",
+    "description": "Glucerna Especializada Para Diabéticos Sabor Vainilla",
+    "id": 1644338591849,
+    "image": "img-Glucerna_Sabor_Vainilla.png"
+  },
+  {
+    "name": "Shot B Diabético 30 Tabl. Contra Lumbalgia Y Ciática",
+    "price": "164",
+    "discount": "10",
+    "categoryProduct": "diabetes",
+    "category": "in-sale",
+    "description": "Shot B Diabético 30 Tabl. Contra Lumbalgia Y Ciática",
+    "id": 1644338696493,
+    "image": "img-ShotB.png"
+  },
+  {
+    "name": "Goicoechea Diabettx Crema Humectante Para Diabetes",
+    "price": "136",
+    "discount": "10",
+    "categoryProduct": "diabetes",
+    "category": "visited",
+    "description": "Goicoechea Diabettx Crema Humectante Para Diabetes",
+    "id": 1644338854821,
+    "image": "img-GoicoecheaDiabettx.png"
+  },
+  {
+    "name": "Gasa D (pie Diabético) Estéril 10x10cm. Bolsa C/10 Sobs.",
+    "price": "52.25",
+    "discount": "5",
+    "categoryProduct": "diabetes",
+    "category": "visited",
+    "description": "Gasa D (pie Diabético) Estéril 10x10cm. Bolsa C/10 Sobs.",
+    "id": 1644339017121,
+    "image": "img-GasaD(pie Diabético).png"
+  },
+  {
+    "name": "Merengue Apto Para Diabéticos Chocolate (50g).",
+    "price": "83.60",
+    "discount": "10",
+    "categoryProduct": "diabetes",
+    "category": "in-sale",
+    "description": "Don't Worry Merengue Apto Para Diabéticos Chocolate (50g).",
+    "id": 1644358927586,
+    "image": "img-Chocolate_Diabéticos.png"
+  }
+]
